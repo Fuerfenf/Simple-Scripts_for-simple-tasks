@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Публичная библиотека</title>
+    <style>
+        [bail]:after {
+            content: "";
+            background-image: url('coin.png');
+            background-size: 20px 20px;
+            width: 20px;
+            height: 20px;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+
+    <div>Книги, которые вы взяли</div>
+    <ul id="your-books">
+
+        <li class="history russian">
+            <span class="author">Евгений Понасенков.</span>Первая научная история войны 1812 года
+        </li>
+
+        <li class="fiction russian">
+            <span class="author">Сергей Лукьяненко.</span> Ночной дозор
+        </li>
+
+    </ul>
+
+    <div>Доступные вам книги:</div>
+    <ul id="available-books">
+
+        <li class="school" stock="10">
+            <span class="author"></span>Химия. 9-й класс
+        </li>
+
+        <li class="fiction foreign" stock="8">
+            <span class="author">Стивен Кинг.</span> Темная башня
+        </li>
+
+        <li class="fiction russian" bail stock="2">
+            <span class="author">Дмитрий Глуховский.</span> Метро 2033
+        </li>
+
+        <li class="fiction foreign" stock="1">
+            <span class="author">Чак Паланик.</span> Дневник
+        </li>
+
+        <li class="school" stock="4">
+            <span class="author"></span>Математика. 3-й класс
+        </li>
+
+        <li class="classic russian" stock="5">
+            <span class="author">Федор Достоевский.</span> Преступление и наказание
+        </li>
+
+        <li class="children foreign" bail stock="3">
+            <span class="author">Дж. К. Роулинг.</span> Гарри Поттер
+        </li>
+
+        <li class="classic russian" stock="3">
+            <span class="author">Михаил Булгаков.</span> Мастер и Маргарита
+        </li>
+
+    </ul>
+
+    <div>Скоро на наших полках</div>
+    <ul id="soon">
+
+        <li class="children russian" stock="3">
+            <span class="author">Эдуард Успенский.</span> Крокодил Гена и его друзья
+        </li>
+
+        <li class="children russian" stock="3">
+            <span class="author">Николай Чернышевский.</span> Что делать?
+        </li>
+
+    </ul>
+</body>
+</html>

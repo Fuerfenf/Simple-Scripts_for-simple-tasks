@@ -1,0 +1,30 @@
+{% block services %}
+{% endblock %}
+{% block base %}
+hostname {{ hostname }}
+!
+!
+no ip domain lookup
+!
+!
+no ip http server
+no ip http secure-server
+!
+!
+{% endblock %}
+!
+{% block alias%}
+{% endblock %}
+!
+{% block logging %}
+line con 0
+ logging synchronous
+ history size 100
+line vty 0 4
+ logging synchronous
+ history size 100
+{% endblock %}
+!
+{% block event%}
+{% endblock %}
+!
